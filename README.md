@@ -16,7 +16,7 @@ This code sends a large amount of text via Telegram line by line. Telegram reser
 Refresh the browser window (F5) or close it.
 
 ## Copyright
-The copyright of Shrek or Bee Movie belongs to Dreamworks Animation and is only added as a popular meme. If there were any legal problems, they would be deleted from the repository, leaving only the shipping code. Dreamworks Animation has nothing to do with this project.
+The copyright of Shrek or Bee Movie script belongs to Dreamworks Animation and is only added as a popular meme. If there were any legal problems, they would be deleted from the repository, leaving only the shipping code. Dreamworks Animation has nothing to do with this project.
 
 ## Inspiration
 This project is based on Matt Fontes' project for Whatsapp:
