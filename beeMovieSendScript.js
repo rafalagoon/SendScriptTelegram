@@ -3,8 +3,8 @@ async function sendScript(script_text){
 	const resolve_time = 500;
 
 	const lines = script_text.split(/[\n\t]+/).map(line => line.trim()).filter(line => line);
-	const textarea = document.querySelector("#editable-message-text");
-	const send_button = document.querySelector(".main-button");
+	const textarea = document.querySelector(".input-message-input");
+	const send_button = document.querySelector(".btn-send");
 	
 	if(!textarea || !send_button)
 		throw new Error("Error: Open a conversation window.")
@@ -19,9 +19,7 @@ async function sendScript(script_text){
 		const event = new Event('input', { bubbles: true});
 		textarea.dispatchEvent(event);
 			
-		setTimeout(() => {
-			send_button.click();
-		}, send_line_time);
+		send_button.click();
 	
 		if(lines.indexOf(line) !== lines.length - 1)
 			await new Promise(resolve => setTimeout(resolve, resolve_time));
